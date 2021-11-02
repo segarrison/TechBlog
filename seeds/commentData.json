@@ -1,0 +1,17 @@
+[
+    {
+        "comment_content": "An interesting perspective.",
+        "user_id": 2,
+        "post_id": 1
+    },
+    {
+        "comment_content": "Learned a lot! Thanks!",
+        "user_id": 3,
+        "post_id": 1
+    },
+    {
+        "comment_content": "Never in the history of wrongness has someone been so wrong.",
+        "user_id": 1,
+        "post_id": 2
+    }
+]

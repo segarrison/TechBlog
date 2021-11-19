@@ -14,8 +14,8 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        // If successful, redirect the browser to the post page
-        document.location.replace('/posts');
+        // If successful, redirect the browser to the home page
+        document.location.replace('/');
       } else {
         alert(response.statusText);
       }
@@ -36,7 +36,7 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/posts');
+        document.location.replace('/');
       } else {
         alert(response.statusText);
       }

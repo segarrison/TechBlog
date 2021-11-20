@@ -22,10 +22,26 @@ const newFormHandler = async (event) => {
       }
     }
   };
+  const updateButtonHandler = async (event) => {
+    //I think I'm going a different route with this
+    
+    // if (event.target.hasAttribute('data-id')) {
+    //   const id = event.target.getAttribute('data-id');
   
+    //   const response = await fetch(`/api/posts/${id}`, {
+    //     method: 'GET',
+    //   });
+  
+    //   if (response.ok) {
+    //     document.location.replace('/dashboard');
+    //   } else {
+    //     alert('Failed to update post');
+    //   }
+    // }
+  };
   const delButtonHandler = async (event) => {
-    if (event.target.hasAttribute('data-id')) {
-      const id = event.target.getAttribute('data-id');
+    if (event.target.hasAttribute('data-id-del')) {
+      const id = event.target.getAttribute('data-id-del');
   
       const response = await fetch(`/api/posts/${id}`, {
         method: 'DELETE',
@@ -34,7 +50,7 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
-        alert('Failed to delete project');
+        alert('Failed to delete post');
       }
     }
   };
@@ -46,3 +62,7 @@ const newFormHandler = async (event) => {
   document
     .querySelector('.post-list')
     .addEventListener('click', delButtonHandler);
+
+    document
+    .querySelector('.post-list')
+    .addEventListener('click', updateButtonHandler);

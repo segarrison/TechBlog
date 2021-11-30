@@ -17,7 +17,7 @@ const newCommentHandler = async (event) => {
       });
       console.log(response);
       if (response.ok) {
-        // document.location.reload();
+        document.location.reload();
       } else {
         alert('Failed to create post');
       }
